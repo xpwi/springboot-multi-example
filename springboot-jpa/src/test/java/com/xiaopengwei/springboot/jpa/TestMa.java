@@ -1,0 +1,1 @@
+package com.xiaopengwei.springboot.jpa;/** * <p> * * </p> * * @author XiaoPengwei.com * @since 2019-04-18 */public class TestMa {    public static void main(String[] args) {        int a = 10;        int b = 101;        int c = a;        int d = b;        System.out.println(c==a);        System.out.println(d==b);    }}

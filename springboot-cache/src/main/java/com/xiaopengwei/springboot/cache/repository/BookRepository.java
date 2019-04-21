@@ -1,0 +1,1 @@
+package com.xiaopengwei.springboot.cache.repository;import com.xiaopengwei.springboot.cache.entity.Book;import org.springframework.stereotype.Component;/** * <p> * 数据访问接口 * </p> * * @author XiaoPengwei.com * @since 2019-04-20 */public interface BookRepository {    Book getByIsbn(String isbn);}

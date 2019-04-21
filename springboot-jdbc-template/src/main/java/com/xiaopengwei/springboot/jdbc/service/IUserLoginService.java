@@ -1,0 +1,1 @@
+package com.xiaopengwei.springboot.jdbc.service;import com.xiaopengwei.springboot.jdbc.entity.UserLogin;import java.util.List;import java.util.Map;/** * <p> * 用户详情业务逻辑层接口 * </p> * * @author XiaoPengwei.com * @since 2019-04-18 */public interface IUserLoginService {    int insert(UserLogin userLogin);    List<Map<String, Object>> findUserList();}
