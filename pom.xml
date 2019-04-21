@@ -4,9 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!--本项目学习自纯洁的微笑：http://www.ityouknow.com-->
-    <!--本项目主要进行版本更新，中文注释，添加小部分内容等-->
-
     <groupId>com.xiaopengwei.springboot</groupId>
     <artifactId>springboot-multi-example</artifactId>
     <!--父模块打包用 pom-->
@@ -68,6 +65,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
