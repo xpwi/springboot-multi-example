@@ -1,4 +1,4 @@
-package com.xiaopengwei.springboot.thymeleaf.model;
+package com.xiaopengwei.springboot.thymeleaf.entity;
 
 /**
  * <p>

@@ -1,6 +1,6 @@
-package com.xiaopengwei.springboot.thymeleaf.web;
+package com.xiaopengwei.springboot.thymeleaf.controller;
 
-import com.xiaopengwei.springboot.thymeleaf.model.User;
+import com.xiaopengwei.springboot.thymeleaf.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
