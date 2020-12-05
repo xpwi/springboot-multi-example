@@ -16,7 +16,7 @@ import org.springframework.util.CollectionUtils;
  * 并取消预初始化
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 @Lazy

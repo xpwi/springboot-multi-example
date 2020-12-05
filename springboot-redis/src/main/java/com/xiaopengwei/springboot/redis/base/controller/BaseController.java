@@ -12,7 +12,7 @@ import java.util.UUID;
  * Controller 基类
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 public abstract class BaseController{
@@ -28,7 +28,7 @@ public abstract class BaseController{
 		modelMap.put("data", data);
 		modelMap.put("msg", msg);
 		return modelMap;
-		
+
 	}
 
 	public String getUuid(){

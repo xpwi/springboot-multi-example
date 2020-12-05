@@ -24,7 +24,7 @@ import java.time.Duration;
  * Redis 配置类
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04_02
  */
 @Configuration

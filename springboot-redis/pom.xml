@@ -4,12 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-redis</artifactId>
     <groupId>com.xiaopengwei.springboot</groupId>
+    <artifactId>springboot-redis</artifactId>
     <version>1.0.0</version>
-
-    <name>spring-boot-redis</name>
-    <description>Demo project for Spring Boot and redis</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

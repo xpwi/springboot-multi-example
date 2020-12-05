@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  *   根据调用的 Service 或 ServiceImpl 切换数据源
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-13
  */
 @Aspect

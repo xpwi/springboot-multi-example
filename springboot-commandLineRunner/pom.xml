@@ -9,9 +9,6 @@
     <packaging>jar</packaging>
     <version>1.0.0</version>
 
-    <name>Spring Boot banner</name>
-    <description>Spring Boot and commandLineRunner demo</description>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>

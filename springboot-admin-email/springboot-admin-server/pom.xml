@@ -7,8 +7,8 @@
     <artifactId>springboot-admin-server</artifactId>
 
     <parent>
+        <groupId>com.xiaopengwei.springboot</groupId>
         <artifactId>springboot-admin-email</artifactId>
-        <groupId>com.xiaopengwei</groupId>
         <version>1.0.0</version>
     </parent>
 

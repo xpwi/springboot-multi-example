@@ -8,7 +8,7 @@ import org.springframework.data.redis.connection.jedis.JedisConnection;
  * 重写 RedisTemplate 加入选库
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 public class RedisTemplate extends org.springframework.data.redis.core.RedisTemplate {

@@ -5,11 +5,11 @@ package com.xiaopengwei.springboot.redis.base.utils;
  * 用于区分 Redis 数据库
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 public class RedisConstants {
-	
+
 	public static final String spilt=":";
 
 	/**
@@ -53,7 +53,7 @@ public class RedisConstants {
 	 */
 	public static final Integer datebase8=8;
 
-	
+
 	public RedisConstants() {
 
 	}

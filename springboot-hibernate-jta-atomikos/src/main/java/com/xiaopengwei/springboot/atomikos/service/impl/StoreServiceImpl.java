@@ -1,6 +1,7 @@
 package com.xiaopengwei.springboot.atomikos.service.impl;
 
 import java.math.BigDecimal;
+import java.util.Optional;
 
 import com.xiaopengwei.springboot.atomikos.service.StoreService;
 import com.xiaopengwei.springboot.atomikos.exception.NoRollbackException;
@@ -42,7 +43,7 @@ public class StoreServiceImpl implements StoreService {
     RedPacketAccountRepository redPacketAccountRepository;
 
     @Override
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     public void store(Customer customer, Order order) {
         customerRepository.save(customer);
         orderRepository.save(order);
@@ -64,79 +65,100 @@ public class StoreServiceImpl implements StoreService {
         throw new NoRollbackException();
     }
 
-    @Transactional()
+    @Override
+    @Transactional(rollbackFor = Exception.class)
     public void transfer() {
-        CapitalAccount ca1 = capitalAccountRepository.findOne(1l);
-        CapitalAccount ca2 = capitalAccountRepository.findOne(2l);
-        RedPacketAccount rp1 = redPacketAccountRepository.findOne(1l);
-        RedPacketAccount rp2 = redPacketAccountRepository.findOne(2l);
+        Optional<CapitalAccount> ca1 = capitalAccountRepository.findById(1L);
+        Optional<CapitalAccount> ca2 = capitalAccountRepository.findById(2L);
+        Optional<RedPacketAccount> rp1 = redPacketAccountRepository.findById(1L);
+        Optional<RedPacketAccount> rp2 = redPacketAccountRepository.findById(2L);
         BigDecimal capital = BigDecimal.TEN;
-        BigDecimal red = BigDecimal.TEN;
-        ca1.transferFrom(capital);
-        ca2.transferTo(capital);
-        capitalAccountRepository.save(ca1);
-        capitalAccountRepository.save(ca2);
-//		if (rp2.getBalanceAmount().compareTo(BigDecimal.ZERO) <= 0) {
-//			throw new RuntimeException("账号异常");
-//		}
-        rp2.transferFrom(red);
-        rp1.transferTo(red);
-        redPacketAccountRepository.save(rp1);
-        redPacketAccountRepository.save(rp2);
+        ca1.ifPresent(cap -> {
+            cap.transferFrom(capital);
+            capitalAccountRepository.save(cap);
+        });
+        ca2.ifPresent(cap -> {
+            cap.transferTo(capital);
+            capitalAccountRepository.save(cap);
+        });
 
+        BigDecimal red = BigDecimal.TEN;
+        rp2.ifPresent(rp -> {
+            rp.transferFrom(red);
+            redPacketAccountRepository.save(rp);
+        });
+        rp1.ifPresent(rp -> {
+            rp.transferTo(red);
+            redPacketAccountRepository.save(rp);
+        });
     }
 
+    @Override
     @Transactional(rollbackFor = StoreException.class)
     public void transferWithStoreException() throws StoreException {
-        CapitalAccount ca1 = capitalAccountRepository.findOne(1l);
-        CapitalAccount ca2 = capitalAccountRepository.findOne(2l);
-        RedPacketAccount rp1 = redPacketAccountRepository.findOne(1l);
-        RedPacketAccount rp2 = redPacketAccountRepository.findOne(2l);
+        Optional<CapitalAccount> ca1 = capitalAccountRepository.findById(1L);
+        Optional<CapitalAccount> ca2 = capitalAccountRepository.findById(2L);
+        Optional<RedPacketAccount> rp1 = redPacketAccountRepository.findById(1L);
+        Optional<RedPacketAccount> rp2 = redPacketAccountRepository.findById(2L);
 
         BigDecimal capital = BigDecimal.TEN;
+        ca1.ifPresent(cap -> {
+            cap.transferFrom(capital);
+            capitalAccountRepository.save(cap);
+        });
+        ca2.ifPresent(cap -> {
+            cap.transferTo(capital);
+            capitalAccountRepository.save(cap);
+        });
+
         BigDecimal red = BigDecimal.TEN;
-
-        ca1.transferFrom(capital);
-        ca2.transferTo(capital);
-        capitalAccountRepository.save(ca1);
-        capitalAccountRepository.save(ca2);
-//		if (rp2.getBalanceAmount().compareTo(BigDecimal.ZERO) <= 0) {
-//			throw new RuntimeException("账号异常");
-//		}
-//		if (rp2.getBalanceAmount().compareTo(BigDecimal.ZERO) <= 0) {
-//			throw new IllegalArgumentException("账号异常");
-//		}
-        if (rp2.getBalanceAmount().compareTo(BigDecimal.ZERO) <= 0) {
-            throw new StoreException();
+        if (rp2.isPresent()) {
+            if (rp2.get().getBalanceAmount().compareTo(BigDecimal.ZERO) <= 0) {
+                throw new StoreException();
+            }
+            rp2.get().transferFrom(red);
+            redPacketAccountRepository.save(rp2.get());
         }
-        rp2.transferFrom(red);
-        rp1.transferTo(red);
-        redPacketAccountRepository.save(rp1);
-        redPacketAccountRepository.save(rp2);
 
+        rp1.ifPresent(rp -> {
+            rp.transferTo(red);
+            redPacketAccountRepository.save(rp);
+        });
     }
 
+    @Override
     @Transactional(noRollbackFor = NoRollbackException.class, rollbackFor = StoreException.class)
     public void transferWithNoRollbackException() throws NoRollbackException {
-        CapitalAccount ca1 = capitalAccountRepository.findOne(1l);
-        CapitalAccount ca2 = capitalAccountRepository.findOne(2l);
-        RedPacketAccount rp1 = redPacketAccountRepository.findOne(1l);
-        RedPacketAccount rp2 = redPacketAccountRepository.findOne(2l);
+        Optional<CapitalAccount> ca1 = capitalAccountRepository.findById(1L);
+        Optional<CapitalAccount> ca2 = capitalAccountRepository.findById(2L);
+        Optional<RedPacketAccount> rp1 = redPacketAccountRepository.findById(1L);
+        Optional<RedPacketAccount> rp2 = redPacketAccountRepository.findById(2L);
 
         BigDecimal capital = BigDecimal.TEN;
-        BigDecimal red = BigDecimal.TEN;
+        ca1.ifPresent(cap -> {
+            cap.transferFrom(capital);
+            capitalAccountRepository.save(cap);
+        });
+        ca2.ifPresent(cap -> {
+            cap.transferTo(capital);
+            capitalAccountRepository.save(cap);
+        });
 
-        ca1.transferFrom(capital);
-        ca2.transferTo(capital);
-        capitalAccountRepository.save(ca1);
-        capitalAccountRepository.save(ca2);
-        if (rp2.getBalanceAmount().compareTo(BigDecimal.ZERO) <= 0) {
-            throw new NoRollbackException();
+        BigDecimal red = BigDecimal.TEN;
+        if (rp2.isPresent()) {
+            if (rp2.get().getBalanceAmount().compareTo(BigDecimal.ZERO) <= 0) {
+                throw new NoRollbackException();
+            }
+            rp2.get().transferFrom(red);
+            redPacketAccountRepository.save(rp2.get());
         }
-        rp2.transferFrom(red);
-        rp1.transferTo(red);
-        redPacketAccountRepository.save(rp1);
-        redPacketAccountRepository.save(rp2);
+
+        rp1.ifPresent(rp -> {
+            rp.transferTo(red);
+            redPacketAccountRepository.save(rp);
+        });
 
     }
+
+
 }

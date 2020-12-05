@@ -10,7 +10,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * Redis  示例启动类
  * </p>
  *
- * @author Xiao Pengwei
+ * @author github.com/xpwi
  * @since  2019-04-02
  */
 @SpringBootApplication

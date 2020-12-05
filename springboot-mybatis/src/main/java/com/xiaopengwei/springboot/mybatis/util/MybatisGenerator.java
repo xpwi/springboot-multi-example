@@ -18,11 +18,11 @@ import java.util.List;
  *   自动生成代码启动类
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 public class MybatisGenerator {
-	
+
     public static void main(String[] args) throws Exception {
         String today = "2019-04-19";
 

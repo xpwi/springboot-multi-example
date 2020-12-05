@@ -13,7 +13,7 @@ import org.hibernate.annotations.GenericGenerator;
  * 实体类基类 - BaseEntity
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 @MappedSuperclass

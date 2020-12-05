@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
  * User操作 开启事务 - UserDao
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 @Transactional

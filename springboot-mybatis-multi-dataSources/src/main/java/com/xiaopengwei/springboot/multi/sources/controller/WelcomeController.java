@@ -12,7 +12,7 @@ import java.util.Map;
  *   首页索引
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-12
  */
 @RestController

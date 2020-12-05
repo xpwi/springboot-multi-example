@@ -11,7 +11,7 @@ import javax.persistence.Table;
  * User
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 @Entity

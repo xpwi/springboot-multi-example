@@ -5,13 +5,10 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-mybatis-plus</artifactId>
     <groupId>com.xiaopengwei.springboot</groupId>
+    <artifactId>springboot-mybatis-plus</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
-
-    <name>Spring Boot MyBatis Plus</name>
-    <description>Demo project for Spring Boot MyBatis Plus</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

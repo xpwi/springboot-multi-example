@@ -12,7 +12,7 @@ import java.nio.charset.Charset;
  * 自定义序列化
  * </p>
  *
- * @author Xiao pengwei
+ * @author github.com/xpwi
  * @since 2019-04-02
  */
 public class FastJson2JsonRedisSerializer<T> implements RedisSerializer<T> {
