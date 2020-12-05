@@ -5,7 +5,7 @@ package com.xiaopengwei.springboot.atomikos.exception;
  *   未回滚异常返回信息
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-09
  */
 public class NoRollbackException extends Exception {

@@ -7,7 +7,7 @@ import com.xiaopengwei.sprngboot.shiro.entity.UserInfo;
  *   业务逻辑接口
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-21
  */
 public interface UserInfoService {
@@ -17,7 +17,7 @@ public interface UserInfoService {
      *
      * @param username
      * @return com.xiaopengwei.sprngboot.shiro.entity.UserInfo
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
      UserInfo findByUsername(String username);
 

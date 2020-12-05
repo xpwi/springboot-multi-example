@@ -72,7 +72,7 @@ public class SpringBootRedisConfig {
      * Jedis配置
      *
      * @return org.springframework.data.redis.connection.jedis.JedisConnectionFactory
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @Bean
     public JedisConnectionFactory JedisConnectionFactory(){
@@ -94,7 +94,7 @@ public class SpringBootRedisConfig {
      *
      * @param redisConnectionFactory
      * @return com.xiaopengwei.springboot.redis.base.utils.RedisTemplate
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @Bean
     public RedisTemplate functionDomainRedisTemplate(RedisConnectionFactory redisConnectionFactory) {
@@ -108,7 +108,7 @@ public class SpringBootRedisConfig {
      * 引入自定义序列化
      *
      * @return org.springframework.data.redis.serializer.RedisSerializer
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @Bean
     public RedisSerializer fastJson2JsonRedisSerializer() {
@@ -120,7 +120,7 @@ public class SpringBootRedisConfig {
      *
      * @param redisTemplate
      * @param factory
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     private void initDomainRedisTemplate(RedisTemplate redisTemplate, RedisConnectionFactory factory) {
         //如果不配置Serializer，那么存储的时候缺省使用String，如果用User类型存储，那么会提示错误User can't cast to String！
@@ -138,7 +138,7 @@ public class SpringBootRedisConfig {
      *
      * @param redisTemplate
      * @return com.xiaopengwei.springboot.redis.base.utils.SpringBootRedisUtil
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @Bean(name = "redisUtil")
     public SpringBootRedisUtil redisUtil(RedisTemplate redisTemplate) {

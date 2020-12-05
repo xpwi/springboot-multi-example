@@ -12,7 +12,7 @@ import javax.annotation.Resource;
  *   业务逻辑处理
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-21
  */
 @Service

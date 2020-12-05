@@ -13,7 +13,7 @@ import java.util.List;
  *   示例 - 前置控制器
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-21
  */
 @Controller
@@ -41,7 +41,7 @@ public class ExampleController {
     public String url(ModelMap map) {
         map.addAttribute("type", "link");
         map.addAttribute("pageId", "springcloud/2019/04/21/");
-        map.addAttribute("img", "https://xiaopengwei.com");
+        map.addAttribute("img", "https://github.com/xpwi");
         return "url";
     }
 

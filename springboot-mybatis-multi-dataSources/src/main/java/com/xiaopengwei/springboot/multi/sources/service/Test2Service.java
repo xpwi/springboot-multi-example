@@ -9,7 +9,7 @@ import java.util.List;
  *  数据源 2 业务逻辑层接口
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-12
  */
 public interface Test2Service {

@@ -5,7 +5,7 @@ package com.xiaopengwei.springboot.thymeleaf.entity;
  *   实体类
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-21
  */
 public class User {

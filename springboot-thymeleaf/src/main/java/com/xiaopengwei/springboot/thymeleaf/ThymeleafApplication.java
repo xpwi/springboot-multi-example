@@ -18,7 +18,7 @@ public class ThymeleafApplication {
 		System.out.println("测试 | http://127.0.0.1:8080/url");
 		System.out.println("测试 | http://127.0.0.1:8080/eq");
 		System.out.println("测试 | http://127.0.0.1:8080/switch");
-		System.out.println("我的首页 | https://xiaopengwei.com");
+		System.out.println("我的首页 | https://github.com/xpwi");
 	}
 
 }

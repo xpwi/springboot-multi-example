@@ -12,7 +12,7 @@ import javax.persistence.Table;
  * 顾客实体类
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-09
  */
 

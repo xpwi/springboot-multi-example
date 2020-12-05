@@ -13,7 +13,7 @@ import java.util.Map;
  * 前置控制器
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-21
  */
 @Controller
@@ -23,7 +23,7 @@ public class HomeController {
      * 索引
      *
      * @return java.lang.String
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @RequestMapping({"/", "/index"})
     public String index() {
@@ -36,7 +36,7 @@ public class HomeController {
      * @param request
      * @param map
      * @return java.lang.String
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @RequestMapping("/login")
     public String login(HttpServletRequest request, Map<String, Object> map) throws Exception {

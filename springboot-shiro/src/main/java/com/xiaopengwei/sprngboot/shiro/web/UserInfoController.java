@@ -12,7 +12,7 @@ public class UserInfoController {
      * 查询用户
      *
      * @return java.lang.String
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @RequestMapping("/userList")
     @RequiresPermissions("userInfo:view")//权限管理;
@@ -24,7 +24,7 @@ public class UserInfoController {
      * 添加用户
      *
      * @return java.lang.String
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @RequestMapping("/userAdd")
     @RequiresPermissions("userInfo:add")//权限管理;
@@ -36,7 +36,7 @@ public class UserInfoController {
      * 删除用户
      *
      * @return java.lang.String
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @RequestMapping("/userDel")
     @RequiresPermissions("userInfo:del")//权限管理;

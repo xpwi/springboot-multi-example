@@ -11,7 +11,7 @@ import java.util.List;
  * 学生表 Mapper 接口
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-11
  */
 @Mapper

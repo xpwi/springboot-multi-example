@@ -11,7 +11,7 @@
     <version>1.0.0</version>
 
     <!--我的首页-->
-    <url>https://xiaopengwei.com/</url>
+    <url>https://github.com/xpwi/</url>
 
     <!--父 pom 仅管理，子模块可以拿出来单独运行-->
     <!--这里自动生成不要手动去配置-->

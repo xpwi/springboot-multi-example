@@ -9,7 +9,7 @@ import org.hibernate.engine.transaction.jta.platform.internal.AbstractJtaPlatfor
  *   Atomikos Jta Platform
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-13
  */
 public class AtomikosJtaPlatform extends AbstractJtaPlatform {

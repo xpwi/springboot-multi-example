@@ -23,7 +23,7 @@ import com.xiaopengwei.springboot.atomikos.repository.order.RedPacketAccountRepo
  * 示例操作的业务逻辑层实现
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-04
  */
 @Service

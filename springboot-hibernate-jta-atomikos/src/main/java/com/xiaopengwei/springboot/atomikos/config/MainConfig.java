@@ -23,7 +23,7 @@ import com.atomikos.icatch.jta.UserTransactionManager;
  *   数据源主配置
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-09
  */
 @Configuration
@@ -35,7 +35,7 @@ public class MainConfig {
 	public PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
 		return new PropertySourcesPlaceholderConfigurer();
 	}
-	
+
 	@Bean
 	public JpaVendorAdapter jpaVendorAdapter() {
 		HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();

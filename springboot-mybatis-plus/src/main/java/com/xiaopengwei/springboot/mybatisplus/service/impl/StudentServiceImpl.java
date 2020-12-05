@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
  * 学生表 服务实现类
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-11
  */
 @Service

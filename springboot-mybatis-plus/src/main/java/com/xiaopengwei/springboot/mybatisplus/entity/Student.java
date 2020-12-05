@@ -9,7 +9,7 @@ import java.io.Serializable;
  * 学生表
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-11
  */
 public class Student implements Serializable {

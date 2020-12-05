@@ -21,7 +21,7 @@ import com.atomikos.jdbc.AtomikosDataSourceBean;
  *   order 数据源 => 数据库 atomikos_two
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-09
  */
 @Configuration

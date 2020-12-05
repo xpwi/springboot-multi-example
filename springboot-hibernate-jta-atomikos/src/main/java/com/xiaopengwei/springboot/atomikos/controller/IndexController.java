@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
  *   索引控制器
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-13
  */
 @RestController

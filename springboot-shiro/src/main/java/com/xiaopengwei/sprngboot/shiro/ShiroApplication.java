@@ -15,6 +15,6 @@ public class ShiroApplication {
 		System.out.println("查询用户 | http://127.0.0.1:8080/userInfo/userList");
 		System.out.println("添加用户 | http://127.0.0.1:8080/userInfo/userAdd");
 		System.out.println("删除用户 | http://127.0.0.1:8080/userInfo/userDel");
-		System.out.println("我的首页 | https://xiaopengwei.com");
+		System.out.println("我的首页 | https://github.com/xpwi");
 	}
 }

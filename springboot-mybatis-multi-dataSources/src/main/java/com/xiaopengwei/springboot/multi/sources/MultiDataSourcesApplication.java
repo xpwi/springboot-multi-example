@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * 启动类
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-12
  */
 @EnableTransactionManagement(order = 2)
@@ -27,7 +27,7 @@ public class MultiDataSourcesApplication {
         System.out.println("首页 索引   地址 | http://127.0.0.1:8080/");
         System.out.println("测试数据源1 地址 | http://127.0.0.1:8080/dataSource/test1");
         System.out.println("测试数据源2 地址 | http://127.0.0.1:8080/dataSource/test2");
-        System.out.println("首页    | https://xiaopengwei.com\n");
+        System.out.println("首页    | https://github.com/xpwi\n");
     }
 
 

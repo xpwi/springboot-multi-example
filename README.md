@@ -57,7 +57,7 @@ git clone https://github.com/xpwi/springboot-multi-example.git
 
 ### 更多内容
 
- - https://xiaopengwei.com/
+ - https://github.com/xpwi/
  
 ### 技术朋友群
 

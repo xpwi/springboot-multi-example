@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *   前置控制器
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-21
  */
 @Controller

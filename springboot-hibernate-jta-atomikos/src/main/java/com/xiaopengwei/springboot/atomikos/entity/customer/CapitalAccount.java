@@ -14,7 +14,7 @@ import javax.persistence.Table;
  * 资本账户实体类
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-09
  */
 @Entity

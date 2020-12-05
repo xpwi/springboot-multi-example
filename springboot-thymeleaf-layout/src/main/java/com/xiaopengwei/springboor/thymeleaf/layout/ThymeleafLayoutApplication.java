@@ -15,7 +15,7 @@ public class ThymeleafLayoutApplication {
 		System.out.println("测试 | http://127.0.0.1:8080/fragment");
 		System.out.println("测试 | http://127.0.0.1:8080/layout");
 		System.out.println("测试 | http://127.0.0.1:8080/home");
-		System.out.println("我的首页 | https://xiaopengwei.com");
+		System.out.println("我的首页 | https://github.com/xpwi");
 	}
 
 }

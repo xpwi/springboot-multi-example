@@ -17,7 +17,7 @@ import java.nio.file.Paths;
  *   文件上传 Controller 请先检查设置的  UPLOADED_FOLDER
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-17
  */
 @Controller

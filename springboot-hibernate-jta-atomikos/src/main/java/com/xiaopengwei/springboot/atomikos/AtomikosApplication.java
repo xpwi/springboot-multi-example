@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *   启动类
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-13
  */
 @SpringBootApplication
@@ -24,7 +24,7 @@ public class AtomikosApplication {
 		System.out.println("成功：无错误   | http://127.0.0.1:8080/atomikos/store/test");
 		System.out.println("失败：带有空值 | http://127.0.0.1:8080/atomikos/store/testWithNull");
 		System.out.println("失败：带有异常 | http://127.0.0.1:8080/atomikos/store/testWithException");
-		System.out.println("首页    | https://xiaopengwei.com\n");
+		System.out.println("首页    | https://github.com/xpwi\n");
 
 	}
 

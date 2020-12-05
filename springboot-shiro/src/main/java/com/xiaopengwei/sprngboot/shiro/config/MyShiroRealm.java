@@ -21,7 +21,7 @@ import javax.annotation.Resource;
  *   权限配置
  * </p>
  *
- * @author XiaoPengwei.com
+ * @author github.com/xpwi
  * @since 2019-04-21
  */
 public class MyShiroRealm extends AuthorizingRealm {
@@ -34,7 +34,7 @@ public class MyShiroRealm extends AuthorizingRealm {
      *
      * @param principals
      * @return org.apache.shiro.authz.AuthorizationInfo
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
@@ -56,7 +56,7 @@ public class MyShiroRealm extends AuthorizingRealm {
      *
      * @param token
      * @return org.apache.shiro.authc.AuthenticationInfo
-     * @author XiaoPengwei.com
+     * @author github.com/xpwi
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token)
