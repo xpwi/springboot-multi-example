@@ -25,7 +25,7 @@ public class StudentController {
 
     @ApiOperation(value = "根据 ID 获取学生名称")
     @GetMapping("/getStudentName")
-    public String getStudentById(Integer studentId, String source) {
+    public String getStudentName(Integer studentId, String source) {
         String key = ServiceMapConstants.STUDENT_SERVICE_PREFIX + source;
         // 如果没找到默认为中国
         StudentService studentService = Optional.ofNullable(studentServiceMap.get(key))

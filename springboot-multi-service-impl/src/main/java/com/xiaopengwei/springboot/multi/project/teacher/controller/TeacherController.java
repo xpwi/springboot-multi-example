@@ -21,7 +21,7 @@ public class TeacherController {
 
     @ApiOperation(value = "根据 ID 获取教师名称")
     @GetMapping("/getTeacherName")
-    public String getStudentById(Integer teacherId, String source) {
+    public String getTeacherName(Integer teacherId, String source) {
         try {
             String key = ServiceMapConstants.TEACHER_SERVICE_PREFIX + source;
 
