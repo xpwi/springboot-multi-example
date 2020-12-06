@@ -1,4 +1,4 @@
-package com.xiaopengwei.springboot.multi.service;
+package com.xiaopengwei.springboot.multi.student.service;
 
 /**
  * <p>

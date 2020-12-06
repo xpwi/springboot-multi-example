@@ -1,7 +1,7 @@
-package com.xiaopengwei.springboot.multi.controller;
+package com.xiaopengwei.springboot.multi.project.student.controller;
 
-import com.xiaopengwei.springboot.multi.constants.ServiceMapConstants;
-import com.xiaopengwei.springboot.multi.service.StudentService;
+import com.xiaopengwei.springboot.multi.project.constants.ServiceMapConstants;
+import com.xiaopengwei.springboot.multi.student.service.StudentService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

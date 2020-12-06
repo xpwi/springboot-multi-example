@@ -1,4 +1,4 @@
-package com.xiaopengwei.springboot.multi.constants;
+package com.xiaopengwei.springboot.multi.project.constants;
 
 /**
  * <p>

@@ -1,12 +1,12 @@
-package com.xiaopengwei.springboot.multi.service.impl;
+package com.xiaopengwei.springboot.multi.project.student.service.impl;
 
-import com.xiaopengwei.springboot.multi.constants.ServiceMapConstants;
-import com.xiaopengwei.springboot.multi.service.StudentService;
+import com.xiaopengwei.springboot.multi.project.constants.ServiceMapConstants;
+import com.xiaopengwei.springboot.multi.student.service.StudentService;
 import org.springframework.stereotype.Service;
 
 /**
  * <p>
- * 泰国站 | 方式一
+ * 学生服务 | 泰国站
  *
  * @author github.com/xpwi
  * @since 2020-12-05
