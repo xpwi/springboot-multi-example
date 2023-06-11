@@ -20,7 +20,7 @@
         <targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
         <targetXMLPackage>mapper</targetXMLPackage>
         <mysql.version>8.0.16</mysql.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <mapper.version>3.4.0</mapper.version>
         <pagehelper.version>4.1.6</pagehelper.version>
         <logback.version>1.1.7</logback.version>
