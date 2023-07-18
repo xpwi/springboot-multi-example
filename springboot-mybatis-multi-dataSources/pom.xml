@@ -23,7 +23,7 @@
         <junit.version>4.12</junit.version>
         <mapper.version>3.4.0</mapper.version>
         <pagehelper.version>4.1.6</pagehelper.version>
-        <logback.version>1.1.7</logback.version>
+        <logback.version>1.2.9</logback.version>
         <druid.version>1.1.16</druid.version>
     </properties>
 
