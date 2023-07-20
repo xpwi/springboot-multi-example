@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StudentController {
 
     @Autowired
-    StudentServiceImpl studentServiceImpl;
+    private StudentServiceImpl studentServiceImpl;
 
     @GetMapping("/create")
     public ReturnMessage create(){
@@ -36,7 +36,7 @@ public class StudentController {
         student.setName("xiaopengwei");
         student.setStudentId("5466");
 
-        boolean insert = studentServiceImpl.insert(student);
+        boolean insert = studentServiceImpl.save(student);
         if (insert){
             returnMessage.setState("1");
             returnMessage.setMessage("创建学生成功！");

@@ -37,10 +37,10 @@ public class StoreServiceImpl implements StoreService {
     private OrderRepository orderRepository;
 
     @Autowired
-    CapitalAccountRepository capitalAccountRepository;
+    private CapitalAccountRepository capitalAccountRepository;
 
     @Autowired
-    RedPacketAccountRepository redPacketAccountRepository;
+    private RedPacketAccountRepository redPacketAccountRepository;
 
     @Override
     @Transactional(rollbackFor = Exception.class)

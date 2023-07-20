@@ -19,7 +19,7 @@ import java.util.List;
 @Service(value = "userService")
 public class UserServiceImpl implements UserService{
     @Autowired
-    UserDao userDao;
+    private UserDao userDao;
 
     @Override
     public User save(User user) {

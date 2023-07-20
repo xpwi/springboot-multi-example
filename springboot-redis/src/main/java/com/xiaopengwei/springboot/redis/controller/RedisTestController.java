@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletRequest;
 public class RedisTestController extends BaseController{
 
     @Autowired
-    SpringBootRedisUtil redisUtil;
+    private SpringBootRedisUtil redisUtil;
 
     @RequestMapping(value="/list")
     public String view(HttpServletRequest request, String name){
