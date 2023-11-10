@@ -22,7 +22,7 @@
 
     <properties>
         <spring.boot.starter.mail.version>2.1.4.RELEASE</spring.boot.starter.mail.version>
-        <spring.boot.admin.server.version>2.1.4</spring.boot.admin.server.version>
+        <spring.boot.admin.server.version>3.1.2</spring.boot.admin.server.version>
     </properties>
 
     <dependencies>
